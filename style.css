@@ -1,0 +1,57 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #000;
+  font-family: Arial, sans-serif;
+  overflow: hidden;
+}
+
+.animation {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  height: 100dvh;
+  background: #000;
+  overflow: hidden;
+}
+
+#heartCanvas {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.love-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: max-content;
+  max-width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #fff;
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 1.35;
+  text-align: center;
+  text-shadow: 0 1px 5px #000;
+  pointer-events: none;
+}
+
+.love-text span {
+  display: block;
+}
+
+@media (min-width: 600px) {
+  .love-text {
+    font-size: 16px;
+  }
+}
